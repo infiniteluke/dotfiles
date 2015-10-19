@@ -1,0 +1,10 @@
+# Add composer installs to path
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# Node version management
+export NVM_DIR="/Users/infiniteluke/.nvm"
+
+# Ruby version management
+export PATH="$PATH:$HOME/.rvm/bin"
+
+
