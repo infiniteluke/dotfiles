@@ -18,3 +18,5 @@ alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
+# Gadgets and Hackz
+alias beep="say all done"
