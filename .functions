@@ -1,3 +1,3 @@
 abr() {
-  aquifer build && aquifer refresh -a $1
+  aquifer build && aquifer refresh -a $1 && say Aquifer done
 }
