@@ -4,7 +4,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Node version management
 export NVM_DIR="/Users/infiniteluke/.nvm"
 
-# Ruby version management
-export PATH="$PATH:$HOME/.rvm/bin"
-
+# PATH Variable
+  # Ruby version management
+  export PATH="$PATH:$HOME/.rvm/bin"
 

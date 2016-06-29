@@ -12,6 +12,7 @@ alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 # Drush & Drupal
 alias drupalcs="phpcs --standard=Drupal --extensions='php,module,inc,install,test,profile,theme,js,css,info,txt'"
+alias drush='~/drush8/drush8'
 
 # Disable Spotlight
 alias spotoff="sudo mdutil -a -i off"
@@ -20,3 +21,4 @@ alias spoton="sudo mdutil -a -i on"
 
 # Gadgets and Hackz
 alias beep="say all done"
+alias cpssh="pbcopy < ~/.ssh/id_rsa.pub"
