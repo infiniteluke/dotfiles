@@ -8,3 +8,6 @@ export NVM_DIR="/Users/infiniteluke/.nvm"
   # Ruby version management
   export PATH="$PATH:$HOME/.rvm/bin"
 
+# Automatically added by Platform.sh CLI installer
+export PATH="/Users/infiniteluke/.platformsh/bin:$PATH"
+. '/Users/infiniteluke/.platformsh/shell-config.rc' 2>/dev/null
