@@ -20,5 +20,11 @@ alias spotoff="sudo mdutil -a -i off"
 alias spoton="sudo mdutil -a -i on"
 
 # Gadgets and Hackz
-alias beep="say all done"
+alias beep="osascript -e 'display notification \"\" with title \"All done.\"' && say all done"
+
+
 alias cpssh="pbcopy < ~/.ssh/id_rsa.pub"
+
+# Yarn rocks
+alias y=yarn
+
