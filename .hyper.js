@@ -82,10 +82,11 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+    `hyper-statusline`,
     `hyperterm-material`,
     `hypercwd`,
     `hyperfull`,
-    `hyperterm-1password`
+    `hyperterm-1password`,
   ],
 
   // in development, you can create a directory under
