@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Material Theme Darker",
+    "editor.codeLensFontFamily": "Dank Mono",
+    "editor.fontFamily": "Dank Mono, Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 26,
+    "editor.tokenColorCustomizations": {
+        "comments": "#FF5b5b"
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.renderControlCharacters": true,
+    "explorer.autoReveal": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "outline.icons": false,
+    "outline.problems.badges": false,
+    "zenMode.hideActivityBar": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
+}
