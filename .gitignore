@@ -1,3 +1,5 @@
 .DS_Store
 scratch
-
+.vscode
+.history
+apps/property/.solargraph.yml
