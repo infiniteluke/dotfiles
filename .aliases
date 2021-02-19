@@ -24,3 +24,16 @@ alias cpssh="pbcopy < ~/.ssh/id_rsa.pub"
 # Yarn rocks
 alias y=yarn
 
+# Rails
+alias fresh='nvm use 10; bundle install; npm ci; say installed; dbm; dbmt; say migrated; rake solr:reindex; say done'
+alias dbc='rake db:create'
+alias dbd='rake db:drop'
+alias dbm='rake db:migrate'
+alias dbr='rake db:rollback'
+
+alias dbct='rake db:create RAILS_ENV=test'
+alias dbdt='rake db:drop RAILS_ENV=test'
+alias dbmt='rake db:migrate RAILS_ENV=test'
+alias dbrt='rake db:rollback RAILS_ENV=test'
+
+alias tldiff="test_launcher \$(git diff -r --no-commit-id --name-only master | xargs -I % echo \$(git rev-parse --show-toplevel)/% | grep _test\.rb)"
