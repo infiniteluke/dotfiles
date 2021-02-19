@@ -1,0 +1,43 @@
+[secrets]
+	providers = git secrets --aws-provider
+	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
+	patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
+	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
+	allowed = AKIAIOSFODNN7EXAMPLE
+	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+	providers = cat /Users/luke.herrington/.config/git-secrets-patterns
+[user]
+	name = Luke Herrington
+	email = luke.herrington@appfolio.com
+	signingkey = A656089F0A12C2F6
+[credential]
+	helper = osxkeychain
+[pull]
+	rebase = false
+[rebase]
+	autosquash = true
+[init]
+	templatedir = ~/.git_templates
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+[alias]
+  recent = branch --sort=-committerdate
+	addlast = commit --amend --no-edit
+	fu = "!f() { dirty=0; git commit --fixup $1; git diff --quiet || dirty=1; if [ "$dirty" -eq 1 ]; then git stash; fi; GIT_SEQUENCE_EDITOR=: git rebase -i $1~; if [ "$dirty" -eq 1 ]; then git stash pop; fi; }; f"
+	co = checkout
+	wip = !git add -A && git commit -m 'WIP [skip ci]'
+	undo = reset HEAD~1 --mixed
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	amend = commit -a --amend
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+	bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+  viz = !git log --graph --oneline --decorate
+	st = status
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
