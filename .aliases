@@ -36,4 +36,6 @@ alias dbdt='rake db:drop RAILS_ENV=test'
 alias dbmt='rake db:migrate RAILS_ENV=test'
 alias dbrt='rake db:rollback RAILS_ENV=test'
 
+alias rake='noglob rake'
+
 alias tldiff="test_launcher \$(git diff -r --no-commit-id --name-only master | xargs -I % echo \$(git rev-parse --show-toplevel)/% | grep _test\.rb)"
