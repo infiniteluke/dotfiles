@@ -9,7 +9,7 @@
 [user]
 	name = Luke Herrington
 	email = luke.herrington@appfolio.com
-	signingkey = A656089F0A12C2F6
+	signingkey = D4BD18CC71EC2276
 [credential]
 	helper = osxkeychain
 [pull]
