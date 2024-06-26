@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.colorTheme": "Material Theme Darker High Contrast + Darcula",
     "editor.codeLensFontFamily": "Dank Mono",
     "editor.fontFamily": "Dank Mono, Fira Code",
     "editor.fontLigatures": true,
@@ -12,7 +12,7 @@
     "editor.renderWhitespace": "trailing",
     "editor.renderControlCharacters": true,
     "explorer.autoReveal": false,
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 1,
     "workbench.statusBar.visible": false,
     "workbench.tips.enabled": false,
     "workbench.editor.enablePreview": false,
@@ -20,6 +20,11 @@
     "outline.icons": false,
     "outline.problems.badges": false,
     "zenMode.hideActivityBar": false,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false
+    "telemetry.telemetryLevel": "off",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSaveMode": "file"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable"
 }
